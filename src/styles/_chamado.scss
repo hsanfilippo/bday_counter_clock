@@ -1,0 +1,20 @@
+.chamado {
+    background-image: linear-gradient(#ffc917, #ff6068);
+    padding: 50px 0;
+    
+    &__item {
+        display: flex;
+        gap: 40px;
+        padding: 1.5vw;
+        max-width: 650px;
+        border-radius: 10px;
+        justify-content: center;
+
+        p {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 0px;
+        }
+    }
+}

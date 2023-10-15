@@ -6,7 +6,7 @@
         display: flex;
         justify-content: right;
     }
-    
+
     &__item {
         display: flex;
         gap: 40px;
@@ -21,6 +21,10 @@
                 font-size: 40px;
                 font-weight: bold;
                 color: #ff6169;
+            }
+
+            small {
+                font-size: 11px;
             }
         }
 

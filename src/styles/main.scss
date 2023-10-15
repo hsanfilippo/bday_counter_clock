@@ -2,6 +2,7 @@
 @use 'diversao';
 @use 'destilados';
 @use 'aperitivos';
+@use 'chamado';
 
 * {
     margin: 0;
@@ -18,13 +19,34 @@
     margin: 0 auto;
 }
 
-.carouselAperitivos {
-    max-width: 200px;
-
+.carouselCustom {
+    max-width: 300px;
+    width: 100%;
     &__item {
-
         &__image {
             border-radius: 10px;
+        }
+    }
+}
+
+.button {
+        display: flex;
+        justify-content: space-around;
+
+        &__btn {
+            padding: 16px;
+            background-color: #ffcf31;
+            color: #000;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: ease 0.3s;
+
+        &:hover {
+            background-color: #ffd931;
+            transition: ease 0.3s;
         }
     }
 }

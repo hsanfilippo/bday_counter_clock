@@ -60,27 +60,5 @@
                 }
             }
         }
-
-        &__button {
-            display: flex;
-            justify-content: space-around;
-
-            &__btn {
-                padding: 16px;
-                background-color: #ffcf31;
-                color: #000;
-                font-weight: bold;
-                border-radius: 8px;
-                text-decoration: none;
-                text-transform: uppercase;
-                cursor: pointer;
-                transition: ease 0.3s;
-
-                &:hover {
-                    background-color: #ffd931;
-                    transition: ease 0.3s;
-                }
-            }
-        }
     }
 }
