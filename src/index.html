@@ -7,62 +7,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.scss">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <header class="hero">
-        <div class="hero__header">
-            <p>Você está convidado para o aniversário do Henrique</p>
-            <p>Faltam XX meses e XX dias para esta data especial</p>
+        <div class="container">
+            <div class="hero__header">
+                <p class="hero__header__title">Você está convidado para o aniversário do Henrique! <br>(27/12/2023)</p>
+                <p  class="hero__header__title">Faltam <span>XXm XXd</span></p>
+            </div>
+            <div class="hero__info container">
+                <ul class="hero__info__items">
+                    <li class="hero__info__items__item">
+                        <p>
+                            <b>Localização</b><br>
+                            R. Nove de Julho, xxx - Centro - Suzano/SP
+                        </p>
+                    </li>
+                    <li class="hero__info__items__item">
+                        <p>
+                            <b>Quando</b><br>
+                            27/12/2023 às 21hrs
+                        </p>
+                    </li>
+                    <li class="hero__info__items__item">
+                        <p>
+                            <b>Consumação</b><br>
+                            Uma dose de destilado grátis na entrada
+                        </p>
+                    </li>
+                </ul>
+                <div class="hero__info__button">
+                    <a class="hero__info__button__btn">
+                        Confirme sua presença
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="hero__info">
-            <ul class="hero__info__items">
-                <li class="hero__info__items__item">
-                    <b>Localização</b>
-                    R. Nove de Julho, xxx - Centro - Suzano/SP
-                </li>
-                <li class="hero__info__items__item">
-                    <b>Quando</b>
-                    27/12/2023 às 21hrs
-                </li>
-                <li class="hero__info__items__item">
-                    <b>Consumação</b>
-                    Uma dose de destilado grátis na entrada
-                </li>
-            </ul>
-        </div>
-            <a class="button button--primary">
-                Confirme sua presença
-            </a>
     </header>
     <section class="diversao">
-        <div class="diversao__item">
-            <h3>Sinuca</h3>
-            <p>
-                Durante o evento, acontecerá um campeonato de sinuca, com premiação para os 3 primeiros colocados.
-            </p>
-            <h4>
-                Premiação:
-            </h4>
-            <p>
-                1º lugar: R$ 100,00 + 1 engradado de Brahma;
-            </p>
-            <p>
-                2º lugar: R$ 50,00 + 1 engradado de Brahma;
-            </p>
-            <p>
-                3º lugar: 1 engradado de Brahma;
-            </p>
-            <img src="./images/sinuquinha.jpeg" alt="Campeonato de sinuca">
+        <div class="container">
+            <div class="diversao__item">
+                <div class="diversao__item__text">
+                <h3>Sinuca</h3>
+                <p>
+                    Durante o evento, acontecerá um campeonato de sinuca, com premiação para os 3 primeiros colocados.
+                </p>
+                <h4>Premiação:</h4>
+                <p>
+                    1º lugar: R$ 100,00 + 1 engradado de Brahma;
+                </p>
+                <p>
+                    2º lugar: R$ 50,00 + 1 engradado de Brahma;
+                </p>
+                <p>
+                    3º lugar: 1 engradado de Brahma;
+                </p>
+                </div>
+                <div id="carouselAperitivos" class="carousel slide carouselAperitivos" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active carouselAperitivos__item" data-bs-interval="4000">
+                        <img src="./images/sinuquinha.jpeg" class="d-block w-100 carouselAperitivos__item__image" alt="...">
+                        </div>
+                        <div class="carousel-item carouselAperitivos__item" data-bs-interval="4000">
+                        <img src="./images/destilados_de_qualidade.jpeg" class="d-block w-100 carouselAperitivos__item__image" alt="...">
+                        </div>
+                        <div class="carousel-item carouselAperitivos__item" data-bs-interval="4000">
+                        <img src="./images/ovo_conserva.jpg" class="d-block w-100 carouselAperitivos__item__image" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
         
     <section class="destilados">
-        <div class="destilados__item">
-            <h3>Destilados</h3>
-            <p>
-                Dias especiais, pedem bebidas especiais. Neste dia, preparei para você uma seleção de destilados nacionais de altíssima qualidade e aprovação popular.
-            </p>
-            <img src="./images/destilados_de_qualidade.jpeg" alt="Campeonato de sinuca">
+        <div class="container">
+            <div class="destilados__item">
+                <h3>Destilados</h3>
+                <p>
+                    Dias especiais, pedem bebidas especiais. Neste dia, preparei para você uma seleção de destilados nacionais de altíssima qualidade e aprovação popular.
+                </p>
+                <img src="./images/destilados_de_qualidade.jpeg" alt="Campeonato de sinuca">
+            </div>
         </div>
     </section>
 
@@ -73,12 +100,10 @@
             Nem só de destilados e sinuca vive um ser humano. Também preparei uma seleção de aperitivos especiais, harmonizados perfeitamente com os destilados fornecidos durante o evento, afinal, ninguém é de ferro.
         </p>
         <img src="./images/ovo_conserva.jpg" alt="Campeonato de sinuca">
-    </section>
         </div>
-
     </section>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 </body>

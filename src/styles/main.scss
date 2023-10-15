@@ -1,4 +1,7 @@
-@use '_hero';
+@use 'hero';
+@use 'diversao';
+@use 'destilados';
+@use 'aperitivos';
 
 * {
     margin: 0;
@@ -6,4 +9,22 @@
     box-sizing: border-box;
     list-style: none;
     font-family: Roboto, sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.carouselAperitivos {
+    max-width: 200px;
+
+    &__item {
+
+        &__image {
+            border-radius: 10px;
+        }
+    }
 }
