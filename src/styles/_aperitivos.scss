@@ -9,8 +9,16 @@
         max-width: 650px;
         border-radius: 10px;
 
+        @media (max-width: 766px) {
+            display: block;
+        }
+
         &__text {
             text-align: right;
+            
+            @media (max-width: 766px) {
+                text-align: center;
+            }
 
             h3 {
                 font-size: 40px;
@@ -25,14 +33,20 @@
             }
 
             p {
-                max-width: 300px;
+                margin: 0 auto;
             }
         }
+    }
+}
 
-        &__image {
-            img {
-                border-radius: 20px;
-            }
-        }
+@media (max-width: 766px) {
+    .aperitivos__item--desk-tablet {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .aperitivos__item--mobile {
+        display: none;
     }
 }

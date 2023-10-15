@@ -1,6 +1,6 @@
 AOS.init();
 
-const bday = new Date("Oct 15, 2023, 20:34:00");
+const bday = new Date("Dec 27, 2023, 21:00:00");
 const bdayStamp = bday.getTime();
 
 const countdown = setInterval(function() {
@@ -18,7 +18,7 @@ const countdown = setInterval(function() {
     const mntTillbday = Math.floor((bdayTimeLeft % msHour) / msMin);
     const secTillbday = Math.floor((bdayTimeLeft % msMin) / 1000);
 
-    document.getElementById('clock').innerHTML = `${daysTillbday} dias e ${hrsTillbday}:${mntTillbday}:${secTillbday}`
+    document.getElementById('clock').innerHTML = `${daysTillbday} dias e ${hrsTillbday}h ${mntTillbday}m ${secTillbday}s`
 
     if (bdayTimeLeft <= 0) {
         clearInterval(countdown);
