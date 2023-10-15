@@ -9,13 +9,21 @@
 
     &__item {
         display: flex;
-        gap: 40px;
+        gap: 16px;
         padding: 1.5vw;
         max-width: 650px;
         border-radius: 10px;
 
+        @media (max-width: 766px) {
+            display: block;
+        }
+
         &__text {
             text-align: left;
+
+            @media (max-width: 766px) {
+                text-align: center;
+            }
 
             h3 {
                 font-size: 40px;
@@ -30,15 +38,22 @@
 
         &__image {
             img {
-                border-radius: 20px;
-            }
-        }
-
-        --reverse {
-            .container {
-                flex-direction: row-reverse;
+                border-radius: 70px;
+                max-width: 200px;
+                width: 100%;
             }
         }
     }
 }
 
+@media (max-width: 766px) {
+    .destilados__item--desk-tablet {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) {
+    .destilados__item--mobile {
+        display: none;
+    }
+}

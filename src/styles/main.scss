@@ -17,6 +17,13 @@
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    overflow-x: hidden;
+
+    @media (max-width: 640px) {
+        .container {
+            width: 80%;
+        }
+    }
 }
 
 .carouselCustom {

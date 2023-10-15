@@ -8,9 +8,24 @@
         padding: 1.5vw;
         max-width: 650px;
         border-radius: 10px;
+        
+        @media (max-width: 766px) {
+            display: block;
+        }
 
         &__text {
             text-align: right;
+
+            &__prize {
+                background-color: #512baa;
+                padding: 2vw 3vw;
+                border-radius: 10px;
+                max-height: 300px;
+            }
+
+            @media (max-width: 766px) {
+                text-align: center;
+            }
 
             h3 {
                 font-size: 40px;
@@ -22,16 +37,27 @@
                 font-size: 25px;
                 font-weight: bold;
                 color: #512baa;
+
+                @media (max-width:766px) {
+                    margin-top: 20px;
+                }
             }
 
             p {
                 max-width: 300px;
+                margin: 5px auto;
             }
         }
 
         &__image {
+            @media (max-width:766px) {
+                display: flex;
+                justify-content: space-around;
+            }
+
             img {
                 border-radius: 20px;
+                margin: 30px auto 50px;
             }
         }
     }
