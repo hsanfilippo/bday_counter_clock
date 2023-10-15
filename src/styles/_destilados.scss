@@ -1,3 +1,40 @@
 .destilados {
-    background-image: linear-gradient(#222, #7c7c7c);
+    background-image: linear-gradient(#512baa, #ff6169);
+    padding: 50px 0;
+
+    .container {
+        display: flex;
+        justify-content: right;
+    }
+    
+    &__item {
+        display: flex;
+        gap: 40px;
+        padding: 1.5vw;
+        max-width: 650px;
+        border-radius: 10px;
+
+        &__text {
+            text-align: left;
+
+            h3 {
+                font-size: 40px;
+                font-weight: bold;
+                color: #ff6169;
+            }
+        }
+
+        &__image {
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        --reverse {
+            .container {
+                flex-direction: row-reverse;
+            }
+        }
+    }
 }
+
